@@ -1,3 +1,11 @@
+// import {without} from 'lodash';
+// console.log(without);
+var _ = require('lodash');
+console.log(_);
+
+array = [1,2,3,4,5,6,7,8];
+console.log('answer:', _.without(array,3));
+
 var mycss = document.querySelector("h3");
 var color1 = document.querySelector(".color1");
 var color2 = document.querySelector(".color2");
@@ -47,24 +55,3 @@ color1.addEventListener("input", setGradient);
 color2.addEventListener("input", setGradient);
 
 my_rand_color.addEventListener("click", setRandomColors); 
-
-// function newGradient() {
-//   var c1 = {
-//     r: Math.floor(Math.random()*255),
-//     g: Math.floor(Math.random()*255),
-//     b: Math.floor(Math.random()*255)
-//   };
-//   var c2 = {
-//     r: Math.floor(Math.random()*255),
-//     g: Math.floor(Math.random()*255),
-//     b: Math.floor(Math.random()*255)
-//   };
-//   c1.rgb = 'rgb('+c1.r+','+c1.g+','+c1.b+')';
-//   c2.rgb = 'rgb('+c2.r+','+c2.g+','+c2.b+')';
-//   return 'radial-gradient(at top left, '+c1.rgb+', '+c2.rgb+')';
-// }
-
-// function rollBg() {
-//   $('.bg.hidden').css('background', newGradient());
-//   $('.bg').toggleClass('hidden');
-// }
