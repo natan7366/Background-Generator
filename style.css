@@ -17,6 +17,11 @@ h1 {
     width: 100%;
 }
 
+
+h2 {
+    text-transform: uppercase;
+}
+
 h3 {
 	font: 900 1em 'Raleway', sans-serif;
     color: rgba(0,0,0,.5);
